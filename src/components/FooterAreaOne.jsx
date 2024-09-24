@@ -16,16 +16,16 @@ const FooterAreaOne = () => {
                 <div className="menu-all-pages-container">
                   <ul className="menu">
                     <li>
+                      <Link to="/home">Home</Link>
+                    </li>
+                    <li>
                       <Link to="/about">About</Link>
                     </li>
                     <li>
-                      <Link to="/team">Team</Link>
+                      <Link to="/service">Service</Link>
                     </li>
                     <li>
-                      <Link to="/contact">Faq</Link>
-                    </li>
-                    <li>
-                      <Link to="/contact">Privacy Policy</Link>
+                      <Link to="/contact">Contact</Link>
                     </li>
                   </ul>
                 </div>
@@ -74,9 +74,6 @@ const FooterAreaOne = () => {
             <div className="col-md-6 col-xl-auto">
               <div className="widget footer-widget widget-newsletter">
                 <h3 className="widget_title">Get In Touch</h3>
-                <p className="footer-text mb-50">
-                  Lorem Ipsum is simply is dumiomy is text Lorem Ipsum is simply
-                </p>
                 <form className="newsletter-form">
                   <div className="form-group">
                     <input
@@ -100,7 +97,7 @@ const FooterAreaOne = () => {
           <div className="row gy-3 justify-content-md-between justify-content-center">
             <div className="col-auto align-self-center">
               <p className="copyright-text text-center">
-                © <Link to="#">Fixturbo</Link> 2024 | All Rights Reserved
+                © <Link to="#">Visit Auto Repair</Link> 2024 | All Rights Reserved
               </p>
             </div>
             <div className="col-auto">

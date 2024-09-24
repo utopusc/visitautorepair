@@ -10,7 +10,7 @@ const SubscribeOne = () => {
       >
         <div className="footer-logo">
           <Link to="/">
-            <img src="assets/img/logo-white.svg" alt="Fixturbo" />
+            <img src="assets/img/logo.jpg" width={200} height={200} alt="Fixturbo" />
           </Link>
         </div>
         <div className="call-media-wrap">
@@ -20,20 +20,14 @@ const SubscribeOne = () => {
           <div className="media-body">
             <h6 className="title text-white">Requesting A Call:</h6>
             <h4 className="link">
-              <a className="text-white" href="tel:6295550129">
-                (629) 555-0129
+              <a className="text-white" href="tel:9168221168">
+                (916) 822-1168
               </a>
             </h4>
           </div>
         </div>
         <div className="social-btn">
-          <a href="https://facebook.com/">
-            <i className="fab fa-facebook-f" />
-          </a>
-          <a href="https://twitter.com/">
-            <i className="fab fa-twitter" />
-          </a>
-          <a href="https://instagram.com/">
+          <a href="https://instagram.com/visitautorepair/">
             <i className="fab fa-instagram" />
           </a>
         </div>

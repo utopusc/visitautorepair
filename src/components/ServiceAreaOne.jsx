@@ -22,21 +22,20 @@ const ServiceAreaOne = () => {
             <div className="service-card">
               <div className="service-card_content">
                 <div className="service-card_icon">
-                  <img src="assets/img/icon/service-icon_1-1.svg" alt="Fixturbo" />
+                  <img src="assets/img/icon/service-icon_1-1.svg" alt="Complete Vehicle Diagnostics" />
                 </div>
                 <h4 className="service-card_title h5">
-                  <Link to="/service-details">Auto Fixers</Link>
+                  <Link to="/service-details/complete-vehicle-diagnostics">Complete Vehicle Diagnostics</Link>
                 </h4>
                 <p className="service-card_text">
-                  A car repair is a service provided to fix any issues or
-                  damages with your{" "}
+                  Advanced diagnostic tools to quickly and accurately identify issues in any vehicle model.
                 </p>
-                <Link to="/service-details" className="link-btn">
+                <Link to="/service-details/complete-vehicle-diagnostics" className="link-btn">
                   Read More <i className="fas fa-arrow-right" />
                 </Link>
               </div>
               <div className="service-card_img">
-                <img src="assets/img/service/service-1-1.png" alt="Fixturbo" />
+                <img src="assets/img/service/service-1-1.png" alt="Complete Vehicle Diagnostics" />
               </div>
             </div>
           </div>
@@ -44,21 +43,20 @@ const ServiceAreaOne = () => {
             <div className="service-card">
               <div className="service-card_content">
                 <div className="service-card_icon">
-                  <img src="assets/img/icon/service-icon_1-2.svg" alt="Fixturbo" />
+                  <img src="assets/img/icon/service-icon_1-2.svg" alt="Routine Maintenance & Fluid Checks" />
                 </div>
                 <h4 className="service-card_title h5">
-                  <Link to="/service-details">Mechanic Masters</Link>
+                  <Link to="/service-details/routine-maintenance">Routine Maintenance & Fluid Checks</Link>
                 </h4>
                 <p className="service-card_text">
-                  A car repair is a service provided to fix any issues or
-                  damages with your{" "}
+                  Essential services like oil changes, fluid top-ups, and regular inspections to ensure peak performance.
                 </p>
-                <Link to="/service-details" className="link-btn">
+                <Link to="/service-details/routine-maintenance" className="link-btn">
                   Read More <i className="fas fa-arrow-right" />
                 </Link>
               </div>
               <div className="service-card_img">
-                <img src="assets/img/service/service-1-2.png" alt="Fixturbo" />
+                <img src="assets/img/service/service-1-2.png" alt="Routine Maintenance & Fluid Checks" />
               </div>
             </div>
           </div>
@@ -66,21 +64,20 @@ const ServiceAreaOne = () => {
             <div className="service-card">
               <div className="service-card_content">
                 <div className="service-card_icon">
-                  <img src="assets/img/icon/service-icon_1-3.svg" alt="Fixturbo" />
+                  <img src="assets/img/icon/service-icon_1-3.svg" alt="Brake Repair & Replacement" />
                 </div>
                 <h4 className="service-card_title h5">
-                  <Link to="/service-details">Drive-In Garage</Link>
+                  <Link to="/service-details/brake-repair">Brake Repair & Replacement</Link>
                 </h4>
                 <p className="service-card_text">
-                  A car repair is a service provided to fix any issues or
-                  damages with your{" "}
+                  Expert brake pad, rotor, and caliper repairs and replacements for safe driving.
                 </p>
-                <Link to="/service-details" className="link-btn">
+                <Link to="/service-details/brake-repair" className="link-btn">
                   Read More <i className="fas fa-arrow-right" />
                 </Link>
               </div>
               <div className="service-card_img">
-                <img src="assets/img/service/service-1-3.png" alt="Fixturbo" />
+                <img src="assets/img/service/service-1-3.png" alt="Brake Repair & Replacement" />
               </div>
             </div>
           </div>

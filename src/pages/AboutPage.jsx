@@ -8,7 +8,6 @@ import ProcessAreaOne from "../components/ProcessAreaOne";
 import CTAAreaOne from "../components/CTAAreaOne";
 import TestimonialOne from "../components/TestimonialOne";
 import SubscribeOne from "../components/SubscribeOne";
-import TeamAreaTwo from "../components/TeamAreaTwo";
 import Preloader from "../helper/Preloader";
 
 const AboutPage = () => {
@@ -40,9 +39,6 @@ const AboutPage = () => {
 
       {/* Testimonial One */}
       <TestimonialOne />
-
-      {/* Team Area Two */}
-      <TeamAreaTwo />
 
       {/* Subscribe One */}
       <SubscribeOne />

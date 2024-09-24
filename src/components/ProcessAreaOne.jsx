@@ -21,7 +21,7 @@ const ProcessAreaOne = () => {
             <div className="title-area text-center">
               <span className="sub-title">Work Process</span>
               <h2 className="sec-title">
-                It Dependable Car Repair Best Solutions
+                Dependable Car Repair Best Solutions
               </h2>
             </div>
           </div>
@@ -30,39 +30,33 @@ const ProcessAreaOne = () => {
           <div className="col-lg-4 process-card-wrap">
             <div className="process-card">
               <div className="process-card-icon">
-                <img src="/assets/img/icon/process-icon-1-1.svg" alt="Fixturbo" />
+                <img src="/assets/img/icon/process-icon-1-1.svg" alt="Inspection and Diagnosis" />
               </div>
-              <h4 className="process-card-title">Mobile Car Repair</h4>
+              <h4 className="process-card-title">Inspection & Diagnosis</h4>
               <p className="process-card-text">
-                It is long established fact that a reader will be distrol acted
-                bioiiy. It is long established fact that a reader will be
-                distrol acted bioiiy
+                Using advanced diagnostic tools, our certified technicians accurately identify the root cause of any issue, saving you time and money.
               </p>
             </div>
           </div>
           <div className="col-lg-4 process-card-wrap">
             <div className="process-card process-card-center">
               <div className="process-card-icon">
-                <img src="/assets/img/icon/process-icon-1-2.svg" alt="Fixturbo" />
+                <img src="/assets/img/icon/process-icon-1-2.svg" alt="Repair & Maintenance" />
               </div>
-              <h4 className="process-card-title">Pro Auto Fix</h4>
+              <h4 className="process-card-title">Repair & Maintenance</h4>
               <p className="process-card-text">
-                It is long established fact that a reader will be distrol acted
-                bioiiy. It is long established fact that a reader will be
-                distrol acted bioiiy
+                From routine maintenance to complex repairs, we ensure that your vehicle is serviced to the highest standards for maximum performance and safety.
               </p>
             </div>
           </div>
           <div className="col-lg-4 process-card-wrap">
             <div className="process-card">
               <div className="process-card-icon">
-                <img src="/assets/img/icon/process-icon-1-3.svg" alt="Fixturbo" />
+                <img src="/assets/img/icon/process-icon-1-3.svg" alt="Quality Assurance" />
               </div>
-              <h4 className="process-card-title">Precision Auto Works</h4>
+              <h4 className="process-card-title">Quality Assurance</h4>
               <p className="process-card-text">
-                It is long established fact that a reader will be distrol acted
-                bioiiy. It is long established fact that a reader will be
-                distrol acted bioiiy
+                Every repair undergoes a thorough quality check to ensure that your vehicle meets our strict standards, guaranteeing reliability and peace of mind.
               </p>
             </div>
           </div>

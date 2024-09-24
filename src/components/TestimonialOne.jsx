@@ -1,7 +1,29 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, FreeMode, Thumbs, EffectFade } from "swiper";
+
 const TestimonialOne = () => {
+  const reviews = [
+    {
+      name: "John Doe",
+      designation: "Customer",
+      comment: "Visit Auto Repair provided exceptional service. My car runs smoothly and I am very satisfied with their work.",
+      rating: 5,
+    },
+    {
+      name: "Jane Smith",
+      designation: "Customer",
+      comment: "From diagnostics to repairs, the team was transparent and very professional. Highly recommend!",
+      rating: 5,
+    },
+    {
+      name: "Emily Johnson",
+      designation: "Customer",
+      comment: "The best auto repair shop I’ve been to. Their customer service is outstanding and they genuinely care about their customers.",
+      rating: 5,
+    },
+  ];
+
   return (
     <div
       className="testimonial-area-1 overflow-hidden"
@@ -18,7 +40,6 @@ const TestimonialOne = () => {
             <div className="space">
               <div className="title-area">
                 <span className="sub-title">Clients testimonial</span>
-
                 <h2 className="sec-title text-white">
                   Car Repair The Best <br /> Services
                 </h2>
@@ -58,127 +79,47 @@ const TestimonialOne = () => {
                     },
                   }}
                 >
-                  <SwiperSlide>
-                    <div>
-                      <div className="testi-card">
-                        <div className="testi-card_content">
-                          <div className="testi-card-profile">
-                            <div className="testi-card-profile-details">
-                              <h4 className="testi-profile-title">
-                                Nafiz Bhuiyan
-                              </h4>
-                              <span className="testi-profile-desig">
-                                Customer
-                              </span>
+                  {reviews.map((review, index) => (
+                    <SwiperSlide key={index}>
+                      <div>
+                        <div className="testi-card">
+                          <div className="testi-card_content">
+                            <div className="testi-card-profile">
+                              <div className="testi-card-profile-details">
+                                <h4 className="testi-profile-title">
+                                  {review.name}
+                                </h4>
+                                <span className="testi-profile-desig">
+                                  {review.designation}
+                                </span>
+                              </div>
+                              <div className="quote-icon">
+                                <img
+                                  src="assets/img/icon/quote1-1.svg"
+                                  alt="Fixturbo"
+                                />
+                              </div>
                             </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/img/icon/quote1-1.svg"
-                                alt="Fixturbo"
-                              />
+                            <p className="testi-card_text">
+                              {review.comment}
+                            </p>
+                            <div className="rating">
+                              {[...Array(review.rating)].map((_, i) => (
+                                <i key={i} className="fas fa-star" />
+                              ))}
                             </div>
-                          </div>
-                          <p className="testi-card_text">
-                            Roof services include repairs installations, and
-                            maintena resident commercial buildings. Expert the a
-                            technicians diagnose and ther address issues roofing
-                            mater gutter systems, and ventilation a Roof
-                            services
-                          </p>
-                          <div className="rating">
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div>
-                      <div className="testi-card">
-                        <div className="testi-card_content">
-                          <div className="testi-card-profile">
-                            <div className="testi-card-profile-details">
-                              <h4 className="testi-profile-title">
-                                Nafiz Bhuiyan
-                              </h4>
-                              <span className="testi-profile-desig">
-                                Customer
-                              </span>
-                            </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/img/icon/quote1-1.svg"
-                                alt="Fixturbo"
-                              />
-                            </div>
-                          </div>
-                          <p className="testi-card_text">
-                            Roof services include repairs installations, and
-                            maintena resident commercial buildings. Expert the a
-                            technicians diagnose and ther address issues roofing
-                            mater gutter systems, and ventilation a Roof
-                            services
-                          </p>
-                          <div className="rating">
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div>
-                      <div className="testi-card">
-                        <div className="testi-card_content">
-                          <div className="testi-card-profile">
-                            <div className="testi-card-profile-details">
-                              <h4 className="testi-profile-title">
-                                Nafiz Bhuiyan
-                              </h4>
-                              <span className="testi-profile-desig">
-                                Customer
-                              </span>
-                            </div>
-                            <div className="quote-icon">
-                              <img
-                                src="assets/img/icon/quote1-1.svg"
-                                alt="Fixturbo"
-                              />
-                            </div>
-                          </div>
-                          <p className="testi-card_text">
-                            Roof services include repairs installations, and
-                            maintena resident commercial buildings. Expert the a
-                            technicians diagnose and ther address issues roofing
-                            mater gutter systems, and ventilation a Roof
-                            services
-                          </p>
-                          <div className="rating">
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                            <i className="fas fa-star" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
 
                 <div className="testimonialOne arrow">
-                  <div className=" testimonialOne-button-next testimonialOne-button">
+                  <div className="testimonialOne-button-next testimonialOne-button">
                     <i className="fas fa-arrow-left"></i>
                   </div>
-                  <div className=" testimonialOne-button-prev testimonialOne-button">
+                  <div className="testimonialOne-button-prev testimonialOne-button">
                     <i className="fas fa-arrow-right"></i>
                   </div>
                 </div>

@@ -8,15 +8,12 @@ const FaqAreaOne = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="title-area mb-lg-0">
-              <span className="sub-title">Any Qustion</span>
+              <span className="sub-title">Any Questions?</span>
               <h2 className="sec-title">
-                Purpose Of Business Consulting Services
+                Everything You Need to Know About Our Services
               </h2>
               <p className="sec-text">
-                A car repair is a service provided to fix any issues or damages
-                with your vehicle. It a involves diagnosing the problem,
-                repairing or replacing the necessary parts, and the ensuring
-                that the car is in proper working condition
+                At Visit Auto Repair, we strive to provide clear and transparent information to enhance your experience. Whether you have questions about our services or your vehicle's needs, we've got you covered. Below are some common inquiries we receive.
               </p>
               <div className="btn-wrap mt-30">
                 <Link className="btn style2" to="/contact">
@@ -30,7 +27,7 @@ const FaqAreaOne = () => {
               <div className="accordion-card active">
                 <div className="accordion-header" id="collapse-item-1">
                   <button
-                    className="accordion-button "
+                    className="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapse-1"
@@ -38,7 +35,7 @@ const FaqAreaOne = () => {
                     aria-controls="collapse-1"
                   >
                     {" "}
-                    Can I choose which part to my car repair?
+                    Can I choose which parts to use for my car repair?
                   </button>
                 </div>
                 <div
@@ -49,15 +46,12 @@ const FaqAreaOne = () => {
                 >
                   <div className="accordion-body">
                     <p className="faq-text">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. Many desktop publis packages and web page
-                      editors now use Lorem Ipsum{" "}
+                      Yes, we provide you with options for OEM (Original Equipment Manufacturer) parts as well as high-quality aftermarket parts. Our technicians will guide you to make the best choice for your vehicle and budget.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="accordion-card ">
+              <div className="accordion-card">
                 <div className="accordion-header" id="collapse-item-2">
                   <button
                     className="accordion-button collapsed"
@@ -73,21 +67,18 @@ const FaqAreaOne = () => {
                 </div>
                 <div
                   id="collapse-2"
-                  className="accordion-collapse collapse "
+                  className="accordion-collapse collapse"
                   aria-labelledby="collapse-item-2"
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
                     <p className="faq-text">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. Many desktop publis packages and web page
-                      editors now use Lorem Ipsum
+                      It is generally recommended to service your car every 6,000 miles or 6 months, whichever comes first. Regular maintenance helps ensure your vehicle’s longevity and performance.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="accordion-card ">
+              <div className="accordion-card">
                 <div className="accordion-header" id="collapse-item-3">
                   <button
                     className="accordion-button collapsed"
@@ -103,21 +94,18 @@ const FaqAreaOne = () => {
                 </div>
                 <div
                   id="collapse-3"
-                  className="accordion-collapse collapse "
+                  className="accordion-collapse collapse"
                   aria-labelledby="collapse-item-3"
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
                     <p className="faq-text">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. Many desktop publis packages and web page
-                      editors now use Lorem Ipsum
+                      If the check engine light comes on, it is important to get it diagnosed as soon as possible. Our advanced diagnostic tools can quickly determine the cause and recommend the best course of action.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="accordion-card ">
+              <div className="accordion-card">
                 <div className="accordion-header" id="collapse-item-4">
                   <button
                     className="accordion-button collapsed"
@@ -133,16 +121,13 @@ const FaqAreaOne = () => {
                 </div>
                 <div
                   id="collapse-4"
-                  className="accordion-collapse collapse "
+                  className="accordion-collapse collapse"
                   aria-labelledby="collapse-item-4"
                   data-bs-parent="#faqAccordion"
                 >
                   <div className="accordion-body">
                     <p className="faq-text">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. Many desktop publis packages and web page
-                      editors now use Lorem Ipsum
+                      The repair time can vary depending on the complexity of the issue. Simple repairs might take a few hours, while more complex issues could take a few days. We strive to provide accurate time estimates and keep you informed throughout the process.
                     </p>
                   </div>
                 </div>
