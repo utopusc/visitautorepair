@@ -5,7 +5,6 @@ import CounterOne from "../components/CounterOne";
 import AboutOne from "../components/AboutOne";
 import ServiceAreaOne from "../components/ServiceAreaOne";
 import MarqueeOne from "../components/MarqueeOne";
-import ClientAreaOne from "../components/ClientAreaOne";
 import CTAAreaOne from "../components/CTAAreaOne";
 import TestimonialOne from "../components/TestimonialOne";
 import ProcessAreaOne from "../components/ProcessAreaOne";
@@ -43,9 +42,6 @@ const HomePageOne = () => {
 
       {/* Marquee One */}
       <MarqueeOne />
-
-      {/* Client Area One */}
-      <ClientAreaOne />
 
       {/* CTA Area One */}
       <CTAAreaOne />
