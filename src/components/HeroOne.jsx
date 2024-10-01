@@ -36,7 +36,7 @@ const HeroOne = () => {
           </div>
           <div className="col-xl-6">
             <div className="hero-thumb text-center">
-              <img src="assets/img/bg/hero_thumb_1_1.png" alt="Fixturbo" />
+              <img src="assets/img/normal/breadcrumb-thumb.png" alt="Fixturbo" />
             </div>
           </div>
         </div>
