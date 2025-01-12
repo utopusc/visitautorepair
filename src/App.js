@@ -22,7 +22,7 @@ import Appointment from "./pages/Appointment";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <RouteScrollToTop />
       <ScrollToTop smooth color="#E8092E" />
       <Routes>
