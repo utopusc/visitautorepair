@@ -17,6 +17,7 @@ import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import WishlistPage from "./pages/WishlistPage";
 import ContactPage from "./pages/ContactPage";
+import Appointment from "./pages/Appointment";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomePageOne />} />
         <Route exact path="/about" element={<AboutPage />} />
+        <Route exact path="/appointment" element={<Appointment />} />
         <Route exact path="/service" element={<ServicePage />} />
         <Route exact path="/service-details" element={<ServiceDetailsPage />} />
         <Route exact path="/project" element={<ProjectPage />} />

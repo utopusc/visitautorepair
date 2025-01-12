@@ -122,6 +122,9 @@ const HeaderOne = () => {
                       <li className="menu-item">
                         <Link to="/service">Services</Link>
                       </li>
+                      <li className="menu-item">
+                        <Link to="/appointment">Appointment</Link>
+                      </li>
                       <li>
                         <NavLink
                           to="/contact"
@@ -187,6 +190,9 @@ const HeaderOne = () => {
                 </li>
                 <li className="menu-item-has-children submenu-item">
                   <Link to="/service">Service</Link>
+                </li>
+                <li className="menu-item-has-children submenu-item">
+                  <Link to="/appointment">Appointment</Link>
                 </li>
                 <li>
                   <NavLink
