@@ -10,48 +10,105 @@ import Preloader from "../helper/Preloader";
 
 const Appointment = () => {
   let [active, setActive] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',
     phoneNumber: '',
     email: '',
-    vehicleMakeModel: '',
+    vehicleModel: '',
     licensePlate: '',
     serviceType: '',
-    dateTime: '',
-    additionalNotes: '',
+    appointmentDateTime: '',
+    notes: ''
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
     try {
-      const response = await fetch('/api/create-event', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+      const appointmentDate = new Date(formData.appointmentDateTime);
+      // Convert to SF timezone
+      const sfTime = appointmentDate.toLocaleString("en-US", {
+        timeZone: "America/Los_Angeles"
       });
-      if (response.ok) {
-        alert('Başvurunuz alındı, takvime eklendi!');
-        setFormData({
-          fullName: '',
-          phoneNumber: '',
-          email: '',
-          vehicleMakeModel: '',
-          licensePlate: '',
-          serviceType: '',
-          dateTime: '',
-          additionalNotes: '',
-        });
-      } else {
-        alert('Bir hata oluştu. Lütfen tekrar deneyiniz.');
-      }
-    } catch (err) {
-      console.error(err);
-      alert('Sunucuya bağlanırken bir hata oluştu.');
+      const sfDate = new Date(sfTime);
+      
+      const webhookData = {
+        appointment_details: {
+          date: sfDate.toLocaleDateString("en-US", { timeZone: "America/Los_Angeles" }),
+          time: sfDate.toLocaleTimeString("en-US", { 
+            timeZone: "America/Los_Angeles",
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: true 
+          }),
+          service_type: formData.serviceType,
+          status: "pending",
+          timezone: "PT (San Francisco)"
+        },
+        
+        customer_info: {
+          name: formData.fullName,
+          phone: formData.phoneNumber,
+          email: formData.email
+        },
+        
+        vehicle_info: {
+          model: formData.vehicleModel,
+          plate: formData.licensePlate
+        },
+        
+        notes: formData.notes || "No additional notes",
+        
+        metadata: {
+          source: "website_form",
+          submission_time: new Date().toLocaleString("en-US", {
+            timeZone: "America/Los_Angeles"
+          }),
+          timezone: "America/Los_Angeles",
+          form_version: "1.0"
+        }
+      };
+
+      console.log('Sending webhook data:', webhookData);
+
+      const response = await fetch('https://hook.us2.make.com/m9ry4ll3oy4uf4jw2jcf8g2e2knfygid', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        mode: 'no-cors',
+        body: JSON.stringify(webhookData)
+      });
+      
+      console.log('Response:', response);
+
+      // Since we're using no-cors, we won't get a JSON response
+      // Instead, assume success if we get here
+      alert('Appointment request submitted successfully!');
+      setFormData({
+        fullName: '',
+        phoneNumber: '',
+        email: '',
+        vehicleModel: '',
+        licensePlate: '',
+        serviceType: '',
+        appointmentDateTime: '',
+        notes: ''
+      });
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert('Error submitting appointment. Please try again or contact us directly.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -70,79 +127,54 @@ const Appointment = () => {
 
       {/* Breadcrumb */}
       <Breadcrumb title={"Appointment"} />
-      <form onSubmit={handleSubmit} style={{ width: '400px', margin: '0 auto' }}>
-        <h2>Randevu Formu</h2>
 
-        <label>Full Name:</label>
-        <input
-          type="text"
-          name="fullName"
-          value={formData.fullName}
-          onChange={handleChange}
-          required
-        />
-
-        <label>Phone Number:</label>
-        <input
-          type="text"
-          name="phoneNumber"
-          value={formData.phoneNumber}
-          onChange={handleChange}
-          required
-        />
-
-        <label>Email Address:</label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-
-        <label>Vehicle Make and Model:</label>
-        <input
-          type="text"
-          name="vehicleMakeModel"
-          value={formData.vehicleMakeModel}
-          onChange={handleChange}
-          required
-        />
-
-        <label>License Plate Number:</label>
-        <input
-          type="text"
-          name="licensePlate"
-          value={formData.licensePlate}
-          onChange={handleChange}
-        />
-
-        <label>Preferred Service Type:</label>
-        <input
-          type="text"
-          name="serviceType"
-          value={formData.serviceType}
-          onChange={handleChange}
-        />
-
-        <label>Preferred Date and Time:</label>
-        <input
-          type="datetime-local"
-          name="dateTime"
-          value={formData.dateTime}
-          onChange={handleChange}
-          required
-        />
-
-        <label>Additional Notes:</label>
-        <textarea
-          name="additionalNotes"
-          value={formData.additionalNotes}
-          onChange={handleChange}
-        />
-
-        <button type="submit">Gönder</button>
-      </form>
+      {/* Appointment Form */}
+      <div className="appointment-form-area section-padding">
+        <div className="container">
+          <form onSubmit={handleSubmit} className="appointment-form">
+            <div className="row">
+              <div className="col-md-6 mb-3">
+                <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} className="form-control" placeholder="Full Name" required />
+              </div>
+              <div className="col-md-6 mb-3">
+                <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} className="form-control" placeholder="Phone Number" required />
+              </div>
+              <div className="col-md-6 mb-3">
+                <input type="email" name="email" value={formData.email} onChange={handleChange} className="form-control" placeholder="Email Address" required />
+              </div>
+              <div className="col-md-6 mb-3">
+                <input type="text" name="vehicleModel" value={formData.vehicleModel} onChange={handleChange} className="form-control" placeholder="Vehicle Make and Model" required />
+              </div>
+              <div className="col-md-6 mb-3">
+                <input type="text" name="licensePlate" value={formData.licensePlate} onChange={handleChange} className="form-control" placeholder="License Plate Number" required />
+              </div>
+              <div className="col-md-6 mb-3">
+                <select name="serviceType" value={formData.serviceType} onChange={handleChange} className="form-control" required>
+                  <option value="">Select Service Type</option>
+                  <option value="cleaning">Cleaning</option>
+                  <option value="maintenance">Maintenance</option>
+                  <option value="paint">Paint</option>
+                </select>
+              </div>
+              <div className="col-md-6 mb-3">
+                <input type="datetime-local" name="appointmentDateTime" value={formData.appointmentDateTime} onChange={handleChange} className="form-control" required />
+              </div>
+              <div className="col-12 mb-3">
+                <textarea name="notes" value={formData.notes} onChange={handleChange} className="form-control" placeholder="Additional Notes (optional)" rows="4"></textarea>
+              </div>
+              <div className="col-12">
+                <button 
+                  type="submit" 
+                  className="btn btn-primary"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Scheduling...' : 'Schedule Appointment'}
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
 
       {/* CTA Area One */}
       <CTAAreaOne />
