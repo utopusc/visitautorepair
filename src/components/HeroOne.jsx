@@ -12,31 +12,31 @@ const HeroOne = () => {
         <div className="row flex-row-reverse">
           <div className="col-xl-6">
             <div className="hero-style1">
-              <span className="sub-title text-white">Growth Accelerator</span>
+              <span className="sub-title text-white">Trusted Auto Care in Davis, CA</span>
               <h1 className="hero-title text-white">
-                Gear Up{" "}
+                Expert{" "}
                 <span>
-                  <img src="assets/img/hero/hero_shape_1.png" alt="Fixturbo" />
-                  For Great
+                  <img src="assets/img/hero/hero_shape_1.png" alt="Visit Auto Repair" />
+                  Auto Repair
                 </span>{" "}
-                Quality Service
+                You Can Count On
               </h1>
               <p className="hero-text text-white">
-                -
+                25+ years of experience. ASE certified technicians. Honest service at fair prices.
               </p>
               <div className="btn-group">
-                <Link to="/about" className="btn">
-                  Learn About Us
+                <Link to="/contact" className="btn">
+                  Schedule Service
                 </Link>
                 <Link to="/service" className="btn style-border">
-                  Our Services
+                  View Our Services
                 </Link>
               </div>
             </div>
           </div>
           <div className="col-xl-6">
             <div className="hero-thumb text-center">
-              <img src="assets/img/normal/breadcrumb-thumb.png" alt="Fixturbo" />
+              <img src="assets/img/normal/breadcrumb-thumb.png" alt="Visit Auto Repair" />
             </div>
           </div>
         </div>

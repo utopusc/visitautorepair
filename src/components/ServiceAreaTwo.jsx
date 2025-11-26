@@ -10,11 +10,11 @@ const ServiceAreaTwo = () => {
             <div className="title-area text-center">
               <span className="sub-title">Our Services</span>
               <h2 className="sec-title">
-                Trusted Car Repair the Professionals{" "}
+                Trusted Car Repair Professionals{" "}
                 <img
                   className="title-bg-shape shape-center"
                   src="assets/img/bg/title-bg-shape.png"
-                  alt="Fixturbo"
+                  alt="Visit Auto Repair"
                 />
               </h2>
             </div>
@@ -33,19 +33,18 @@ const ServiceAreaTwo = () => {
               >
                 <div>
                   <div className="service-card_icon">
-                    <img src="assets/img/icon/service-icon_1-1.svg" alt="Fixturbo" />
+                    <img src="assets/img/icon/service-icon_1-1.svg" alt="Engine Repair" />
                   </div>
                   <h4 className="service-card_title h5">
-                    <Link to="/service-details">Mechanic Masters</Link>
+                    <Link to="/service">Engine Repair & Diagnostics</Link>
                   </h4>
                   <p className="service-card_text">
-                    Customer satisfaction is crucial for amohlo di business as
-                    it leads to customer loyalty.{" "}
+                    Complete engine troubleshooting, repairs, and performance optimization for all vehicle makes and models.
                   </p>
                 </div>
               </div>
-              <Link to="/service-details" className="btn style4">
-                Read More <i className="fas fa-arrow-right" />
+              <Link to="/contact" className="btn style4">
+                Schedule Service <i className="fas fa-arrow-right" />
               </Link>
             </div>
           </div>
@@ -59,19 +58,18 @@ const ServiceAreaTwo = () => {
               >
                 <div>
                   <div className="service-card_icon">
-                    <img src="assets/img/icon/service-icon_1-2.svg" alt="Fixturbo" />
+                    <img src="assets/img/icon/service-icon_1-2.svg" alt="Brake Service" />
                   </div>
                   <h4 className="service-card_title h5">
-                    <Link to="/service-details">Speedy Auto Repair</Link>
+                    <Link to="/service">Brake Repair & Replacement</Link>
                   </h4>
                   <p className="service-card_text">
-                    Customer satisfaction is crucial for amohlo di business as
-                    it leads to customer loyalty.{" "}
+                    Expert brake pad, rotor, and caliper repairs to ensure your vehicle stops safely every time.
                   </p>
                 </div>
               </div>
-              <Link to="/service-details" className="btn style4">
-                Read More <i className="fas fa-arrow-right" />
+              <Link to="/contact" className="btn style4">
+                Schedule Service <i className="fas fa-arrow-right" />
               </Link>
             </div>
           </div>
@@ -85,19 +83,18 @@ const ServiceAreaTwo = () => {
               >
                 <div>
                   <div className="service-card_icon">
-                    <img src="assets/img/icon/service-icon_1-3.svg" alt="Fixturbo" />
+                    <img src="assets/img/icon/service-icon_1-3.svg" alt="Transmission Service" />
                   </div>
                   <h4 className="service-card_title h5">
-                    <Link to="/service-details">Precision Auto Works</Link>
+                    <Link to="/service">Transmission Service</Link>
                   </h4>
                   <p className="service-card_text">
-                    Customer satisfaction is crucial for amohlo di business as
-                    it leads to customer loyalty.{" "}
+                    Professional transmission diagnosis, repair, and replacement for smooth shifting and reliability.
                   </p>
                 </div>
               </div>
-              <Link to="/service-details" className="btn style4">
-                Read More <i className="fas fa-arrow-right" />
+              <Link to="/contact" className="btn style4">
+                Schedule Service <i className="fas fa-arrow-right" />
               </Link>
             </div>
           </div>

@@ -8,12 +8,12 @@ const AboutOne = () => {
         <img
           className="about1-shape-img-1 spin"
           src="assets/img/normal/about_shape1-2.svg"
-          alt="Fixturbo"
+          alt="Visit Auto Repair"
         />
         <img
           className="about1-shape-img-2 spin2"
           src="assets/img/normal/about_shape1-1.svg"
-          alt="Fixturbo"
+          alt="Visit Auto Repair"
         />
       </div>
       <div className="container">
@@ -21,10 +21,10 @@ const AboutOne = () => {
           <div className="col-xl-6">
             <div className="about-thumb1 mb-40 mb-xl-0">
               <div className="about-img-1">
-                <img src="/assets/img/normal/about_1-1.png" alt="Fixturbo" />
+                <img src="/assets/img/normal/about_1-1.png" alt="Visit Auto Repair Shop" />
               </div>
               <div className="about-img-2">
-                <img src="/assets/img/normal/about_1-2.png" alt="Fixturbo" />
+                <img src="/assets/img/normal/about_1-2.png" alt="Auto Repair Services" />
               </div>
             </div>
           </div>
@@ -36,8 +36,7 @@ const AboutOne = () => {
                   Where Expertise Meets Every Engine
                 </h2>
                 <p className="sec-text">
-                  Et purus duis sollicitudin dignissim habitant. Egestas nulla
-                  quis venenatis cras sed eu massa eu faucibus. Urna fusce
+                  At Visit Auto Repair, we bring over 25 years of hands-on experience to every vehicle we service. Our certified technicians are committed to delivering honest, reliable, and affordable auto repair services.
                 </p>
               </div>
               <div className="row gy-4 justify-content-xl-between justify-content-end align-items-center flex-row-reverse">
@@ -49,7 +48,7 @@ const AboutOne = () => {
                         maskImage: "url(assets/img/bg/about_counter-bg1-1.png)",
                       }}
                     >
-                      <img src="assets/img/icon/about_icon1-1.svg" alt="Fixturbo" />
+                      <img src="assets/img/icon/about_icon1-1.svg" alt="Experience Icon" />
                       <h3 className="about-year-wrap-title">
                         <span className="counter-number">25</span>+
                       </h3>
@@ -64,19 +63,19 @@ const AboutOne = () => {
                     <ul>
                       <li>
                         <i className="fas fa-check-circle" />
-                        Professional Car Repair Services
-                      </li>
-                      <li>
-                        <i className="fas fa-check-circle" />A car repair is a
-                        service provided to fix
+                        ASE Certified Technicians
                       </li>
                       <li>
                         <i className="fas fa-check-circle" />
-                        Get Your Car Fixed Right Away Car Repair{" "}
+                        Transparent Pricing & Honest Estimates
                       </li>
                       <li>
                         <i className="fas fa-check-circle" />
-                        Quick and Efficient Car Repairs
+                        Same-Day Service Available
+                      </li>
+                      <li>
+                        <i className="fas fa-check-circle" />
+                        All Makes & Models Welcome
                       </li>
                     </ul>
                   </div>
@@ -84,7 +83,7 @@ const AboutOne = () => {
               </div>
               <div className="btn-wrap mt-20">
                 <Link to="/about" className="btn style2 mt-xl-0 mt-20">
-                  Read More <i className="fas fa-arrow-right ms-2" />
+                  Learn More <i className="fas fa-arrow-right ms-2" />
                 </Link>
               </div>
             </div>

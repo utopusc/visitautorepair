@@ -10,7 +10,7 @@ const ServiceAreaFour = () => {
             <div className="title-area text-center">
               <span className="sub-title">Our Services</span>
               <h2 className="sec-title">
-                Purpose Of Business And Consulting Services
+                Complete Auto Care Solutions
               </h2>
             </div>
           </div>
@@ -28,14 +28,13 @@ const ServiceAreaFour = () => {
               >
                 <div>
                   <div className="service-card_icon">
-                    <img src="assets/img/icon/service-icon_1-1.svg" alt="Fixturbo" />
+                    <img src="assets/img/icon/service-icon_1-1.svg" alt="Routine Maintenance" />
                   </div>
                   <h4 className="service-card_title h5">
-                    <Link to="/service-details">Mechanic Masters</Link>
+                    <Link to="/service">Routine Maintenance</Link>
                   </h4>
                   <p className="service-card_text">
-                    Customer satisfaction is crucial for amohlo di business as
-                    it leads to customer loyalty.{" "}
+                    Oil changes, fluid checks, filter replacements, and scheduled maintenance to keep your vehicle running smoothly.
                   </p>
                 </div>
               </div>
@@ -51,14 +50,13 @@ const ServiceAreaFour = () => {
               >
                 <div>
                   <div className="service-card_icon">
-                    <img src="assets/img/icon/service-icon_1-2.svg" alt="Fixturbo" />
+                    <img src="assets/img/icon/service-icon_1-2.svg" alt="AC & Heating" />
                   </div>
                   <h4 className="service-card_title h5">
-                    <Link to="/service-details">Speedy Auto Repair</Link>
+                    <Link to="/service">AC & Heating Repair</Link>
                   </h4>
                   <p className="service-card_text">
-                    Customer satisfaction is crucial for amohlo di business as
-                    it leads to customer loyalty.{" "}
+                    Complete climate control services including A/C recharge, compressor repair, and heating system diagnostics.
                   </p>
                 </div>
               </div>
@@ -74,14 +72,13 @@ const ServiceAreaFour = () => {
               >
                 <div>
                   <div className="service-card_icon">
-                    <img src="assets/img/icon/service-icon_1-3.svg" alt="Fixturbo" />
+                    <img src="assets/img/icon/service-icon_1-3.svg" alt="Electrical Repair" />
                   </div>
                   <h4 className="service-card_title h5">
-                    <Link to="/service-details">Precision Auto Works</Link>
+                    <Link to="/service">Electrical System Repair</Link>
                   </h4>
                   <p className="service-card_text">
-                    Customer satisfaction is crucial for amohlo di business as
-                    it leads to customer loyalty.{" "}
+                    Battery testing, alternator repair, starter replacement, and complete electrical diagnostics.
                   </p>
                 </div>
               </div>

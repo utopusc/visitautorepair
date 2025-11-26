@@ -37,19 +37,19 @@ const FooterAreaOne = () => {
                 <div className="menu-all-pages-container">
                   <ul className="menu">
                     <li>
-                      <Link to="/service">Mechanic Masters</Link>
+                      <Link to="/service">Engine Repair</Link>
                     </li>
                     <li>
-                      <Link to="/service">Speedy Auto Repair</Link>
+                      <Link to="/service">Brake Service</Link>
                     </li>
                     <li>
-                      <Link to="/service">Mobile Car Repair</Link>
+                      <Link to="/service">Transmission Repair</Link>
                     </li>
                     <li>
-                      <Link to="/service">Pro Auto Fix</Link>
+                      <Link to="/service">Vehicle Diagnostics</Link>
                     </li>
                     <li>
-                      <Link to="/service">Precision Auto Works</Link>
+                      <Link to="/service">AC & Heating</Link>
                     </li>
                   </ul>
                 </div>
@@ -97,7 +97,7 @@ const FooterAreaOne = () => {
           <div className="row gy-3 justify-content-md-between justify-content-center">
             <div className="col-auto align-self-center">
               <p className="copyright-text text-center">
-                © <Link to="#">Visit Auto Repair</Link> 2024 | All Rights Reserved
+                © <Link to="#">Visit Auto Repair</Link> 2025 | All Rights Reserved
               </p>
             </div>
             <div className="col-auto">
